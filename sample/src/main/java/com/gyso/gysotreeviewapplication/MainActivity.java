@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.setOnItemListener((item, node)-> {
             Animal animal = node.getValue();
+            targetNode = node;
             Toast.makeText(this,"you click the head of "+animal,Toast.LENGTH_SHORT).show();
         });
 
